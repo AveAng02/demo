@@ -1,9 +1,12 @@
-//use std::io;
-
 fn main() {
-    hello_world()
+    let y = {
+        let x = 3;
+        x + 1
+    };
+
+    println!("The value of y is: {}{}", y, hour());
 }
 
-fn hello_world() {
-    println!("Hello world!!")
+fn hour() -> char {
+    'h'
 }
